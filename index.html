@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educational Website</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      overflow-y: scroll;
+      direction: rtl; /* Changed to support left-to-right alignment */
+      text-align: left; /* Changed to align text to the left */
+    }
+    header {
+      display: flex;
+      justify-content: center; /* Center the header content */
+      align-items: center;
+      flex-direction: row-reverse; /* Changed to default left-to-right header layout */
+    }
+    header img {
+      width: 100px; /* Adjust logo size */
+      height: auto; /* Maintain aspect ratio */
+      margin-right: 10% auto; /* Add space between logo and text */
+    }
+    header h1 {
+      font-size: 3em; /* Increase font size of the header */
+    }
+    footer {
+      max-width: 800px;
+      margin: 0% auto;
+      text-align: center; /* Changed to align footer text to the center */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Logo Image -->
+    <img src="logo.png" alt="LearnPro Logo">
+    <h1>LearnPro</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>LearnPro is your trusted platform for quality educational content. 
+        Our goal is to empower learners with courses that build practical skills and help you achieve your career goals</h2>
+    <p>Explore our range of courses and take the first step towards a brighter future.</p>
+    <button onclick="alert('Start now')">Start Now</button>
+  </section>
+
+  <section id="courses">
+    <h2>Available Courses</h2>
+    <div class="course">
+      <h3>Primavera P6 from Beginner to Expert</h3>
+      <p>Learn the basics of Primavera P6</p>
+      <button>Details</button>
+    </div>
+    <div class="course">
+      <h3>PowerBI Course</h3>
+      <p>Master PowerBI</p>
+      <button>Details</button>
+    </div>
+    <div class="course">
+      <h3>Primavera Course</h3>
+      <p>Learn Primavera concepts</p>
+      <button>Details</button>
+    </div>
+    <div class="course">
+      <h3>PowerBI Course</h3>
+      <p>Learn how to use PowerBI for data analysis</p>
+      <button>Details</button>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <h2>Contact Us</h2>
+    <p>Engineer: Ayman Morsi</p> 
+    <p>Email: info@edu.com</p> 
+    <p>Phone: 123-456-789</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
